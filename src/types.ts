@@ -31,3 +31,9 @@ export interface GradedSubmission {
   overallFeedback: string;
   gradedDate: string;
 }
+export interface ChatMessage {
+  id: string;
+  content: string;
+  sender: "user" | "bot";
+  timestamp: string;
+}

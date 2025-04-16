@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Chatbot from './Chatbot';
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -14,6 +15,7 @@ const Layout: React.FC<LayoutProps> = ({
       <footer className="bg-gray-800 text-white p-4 text-center">
         <p>Homework Grader Prototype &copy; {new Date().getFullYear()}</p>
       </footer>
+      <Chatbot />
     </div>;
 };
 export default Layout;
